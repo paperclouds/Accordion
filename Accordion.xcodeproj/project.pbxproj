@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A826C96B63F289C6BB1FD14 /* libPods-Accordion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C27512841D75B4C291EE1D21 /* libPods-Accordion.a */; };
+		AA1CC385208EFDCF0029882E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CC383208EFDCF0029882E /* ViewController.m */; };
+		AA1CC388208EFE500029882E /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CC387208EFE500029882E /* FirstTableViewCell.m */; };
+		AA1CC38B208EFE720029882E /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1CC38A208EFE720029882E /* SecondTableViewCell.m */; };
+		AA1CC38F208F18F00029882E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AA1CC38E208F18F00029882E /* Podfile */; };
 		AA87E577208891B800A2FF86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA87E576208891B800A2FF86 /* AppDelegate.m */; };
-		AA87E57A208891B800A2FF86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA87E579208891B800A2FF86 /* ViewController.m */; };
 		AA87E57D208891B800A2FF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA87E57B208891B800A2FF86 /* Main.storyboard */; };
 		AA87E57F208891BA00A2FF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA87E57E208891BA00A2FF86 /* Assets.xcassets */; };
 		AA87E582208891BA00A2FF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA87E580208891BA00A2FF86 /* LaunchScreen.storyboard */; };
@@ -36,11 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F919D6B7E1315B81E1A2A4C /* Pods-Accordion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accordion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Accordion/Pods-Accordion.debug.xcconfig"; sourceTree = "<group>"; };
+		7777F775D502461CD7737FDB /* Pods-Accordion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accordion.release.xcconfig"; path = "Pods/Target Support Files/Pods-Accordion/Pods-Accordion.release.xcconfig"; sourceTree = "<group>"; };
+		AA1CC383208EFDCF0029882E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA1CC384208EFDCF0029882E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA1CC386208EFE500029882E /* FirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTableViewCell.h; sourceTree = "<group>"; };
+		AA1CC387208EFE500029882E /* FirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewCell.m; sourceTree = "<group>"; };
+		AA1CC389208EFE720029882E /* SecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
+		AA1CC38A208EFE720029882E /* SecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewCell.m; sourceTree = "<group>"; };
+		AA1CC38E208F18F00029882E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		AA87E572208891B800A2FF86 /* Accordion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accordion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA87E575208891B800A2FF86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA87E576208891B800A2FF86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AA87E578208891B800A2FF86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AA87E579208891B800A2FF86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AA87E57C208891B800A2FF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA87E57E208891BA00A2FF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA87E581208891BA00A2FF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 		AA87E599208891BA00A2FF86 /* AccordionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccordionUITests.m; sourceTree = "<group>"; };
 		AA87E59B208891BA00A2FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA87E5A920889C5E00A2FF86 /* CategoryData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CategoryData.plist; sourceTree = "<group>"; };
+		C27512841D75B4C291EE1D21 /* libPods-Accordion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Accordion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A826C96B63F289C6BB1FD14 /* libPods-Accordion.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA1CC381208EFDCF0029882E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CC386208EFE500029882E /* FirstTableViewCell.h */,
+				AA1CC387208EFE500029882E /* FirstTableViewCell.m */,
+				AA1CC389208EFE720029882E /* SecondTableViewCell.h */,
+				AA1CC38A208EFE720029882E /* SecondTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA1CC382208EFDCF0029882E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA1CC384208EFDCF0029882E /* ViewController.h */,
+				AA1CC383208EFDCF0029882E /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AA87E569208891B800A2FF86 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +120,8 @@
 				AA87E58D208891BA00A2FF86 /* AccordionTests */,
 				AA87E598208891BA00A2FF86 /* AccordionUITests */,
 				AA87E573208891B800A2FF86 /* Products */,
+				B0F8C0DBFBDF18C3BD71721F /* Pods */,
+				F093D87D72338D474310B096 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +138,13 @@
 		AA87E574208891B800A2FF86 /* Accordion */ = {
 			isa = PBXGroup;
 			children = (
+				AA1CC381208EFDCF0029882E /* View */,
+				AA1CC382208EFDCF0029882E /* Controller */,
 				AA87E575208891B800A2FF86 /* AppDelegate.h */,
 				AA87E576208891B800A2FF86 /* AppDelegate.m */,
-				AA87E578208891B800A2FF86 /* ViewController.h */,
-				AA87E579208891B800A2FF86 /* ViewController.m */,
 				AA87E57B208891B800A2FF86 /* Main.storyboard */,
 				AA87E57E208891BA00A2FF86 /* Assets.xcassets */,
+				AA1CC38E208F18F00029882E /* Podfile */,
 				AA87E580208891BA00A2FF86 /* LaunchScreen.storyboard */,
 				AA87E583208891BA00A2FF86 /* Info.plist */,
 				AA87E584208891BA00A2FF86 /* main.m */,
@@ -135,6 +171,23 @@
 			path = AccordionUITests;
 			sourceTree = "<group>";
 		};
+		B0F8C0DBFBDF18C3BD71721F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F919D6B7E1315B81E1A2A4C /* Pods-Accordion.debug.xcconfig */,
+				7777F775D502461CD7737FDB /* Pods-Accordion.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F093D87D72338D474310B096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27512841D75B4C291EE1D21 /* libPods-Accordion.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA87E59E208891BA00A2FF86 /* Build configuration list for PBXNativeTarget "Accordion" */;
 			buildPhases = (
+				A271A3FCAC25B72C3E32D145 /* [CP] Check Pods Manifest.lock */,
 				AA87E56E208891B800A2FF86 /* Sources */,
 				AA87E56F208891B800A2FF86 /* Frameworks */,
 				AA87E570208891B800A2FF86 /* Resources */,
@@ -238,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1CC38F208F18F00029882E /* Podfile in Resources */,
 				AA87E5AA20889C5E00A2FF86 /* CategoryData.plist in Resources */,
 				AA87E582208891BA00A2FF86 /* LaunchScreen.storyboard in Resources */,
 				AA87E57F208891BA00A2FF86 /* Assets.xcassets in Resources */,
@@ -261,13 +316,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A271A3FCAC25B72C3E32D145 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Accordion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA87E56E208891B800A2FF86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA87E57A208891B800A2FF86 /* ViewController.m in Sources */,
+				AA1CC385208EFDCF0029882E /* ViewController.m in Sources */,
+				AA1CC38B208EFE720029882E /* SecondTableViewCell.m in Sources */,
 				AA87E585208891BA00A2FF86 /* main.m in Sources */,
+				AA1CC388208EFE500029882E /* FirstTableViewCell.m in Sources */,
 				AA87E577208891B800A2FF86 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,16 +513,14 @@
 		};
 		AA87E59F208891BA00A2FF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F919D6B7E1315B81E1A2A4C /* Pods-Accordion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MC29DLSP7;
 				INFOPLIST_FILE = Accordion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Accordion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,16 +529,14 @@
 		};
 		AA87E5A0208891BA00A2FF86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7777F775D502461CD7737FDB /* Pods-Accordion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MC29DLSP7;
 				INFOPLIST_FILE = Accordion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Accordion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,11 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5X7752T48;
 				INFOPLIST_FILE = AccordionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.neisha.AccordionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,11 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5X7752T48;
 				INFOPLIST_FILE = AccordionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.neisha.AccordionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,11 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5X7752T48;
 				INFOPLIST_FILE = AccordionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.neisha.AccordionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,11 +593,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5X7752T48;
 				INFOPLIST_FILE = AccordionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.neisha.AccordionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

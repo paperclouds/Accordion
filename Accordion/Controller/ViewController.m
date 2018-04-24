@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "FirstTableViewCell.h"
+#import "SecondTableViewCell.h"
+#import <UIImageView+WebCache.h>
 
-static NSString *CellIdentifier = @"CellIdentifier";
+static NSString *FirstCellIdentifier = @"FirstCellIdentifier";
+static NSString *SecondCellIdentifier = @"SecondCellIdentifier";
+
+#define firstCellHeight 80
+#define secondCellHeight 50
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -24,7 +31,6 @@ static NSString *CellIdentifier = @"CellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
     [self.view addSubview:self.tableView];
 }
 
@@ -42,7 +48,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.showsVerticalScrollIndicator = NO;
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_tableView registerClass:[FirstTableViewCell class] forCellReuseIdentifier:FirstCellIdentifier];
+        [_tableView registerClass:[SecondTableViewCell class] forCellReuseIdentifier:SecondCellIdentifier];
     }
     return _tableView;
 }
@@ -62,17 +70,16 @@ static NSString *CellIdentifier = @"CellIdentifier";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (_isOpen && indexPath.row !=0) {
-            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            SecondTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SecondCellIdentifier forIndexPath:indexPath];
             NSArray *secondArray = self.dataArray[indexPath.section][@"tags"];
             NSString *str = secondArray[indexPath.row-1][@"t"];
-            cell.textLabel.text = str;
-            cell.backgroundColor = [UIColor whiteColor];
+            cell.titleLbl.text = str;
             return cell;
     }else{
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        FirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FirstCellIdentifier forIndexPath:indexPath];
         NSString *str = self.dataArray[indexPath.section][@"name"];
-        cell.textLabel.text = str;
-        cell.backgroundColor = [UIColor grayColor];
+        cell.titleLbl.text = str;
+        [cell.iconImageView sd_setImageWithURL:[NSURL URLWithString:self.dataArray[indexPath.section][@"icon_f"]]];
         return cell;
     }
 }
@@ -81,9 +88,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        return 80;
+        return firstCellHeight;
     }
-    return 35;
+    return secondCellHeight;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
