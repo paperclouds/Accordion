@@ -6,5 +6,14 @@
 
 实现思路：把一级菜单内容展示在tableView每个section的第一个cell上，二级菜单的内容通过在点击一级菜单时添加删除cell来实现展开和折叠。
 
+更新：
+
+![手风琴效果2.gif](https://upload-images.jianshu.io/upload_images/2466108-8fff4f6599c92b8e.gif?imageMogr2/auto-orient/strip)
+
+UI优化
+
 原作者项目链接：
 http://code.cocoachina.com/view/130107
+
+本项目链接：
+https://github.com/paperclouds/Accordion
