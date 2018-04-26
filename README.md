@@ -14,6 +14,3 @@ UI优化
 
 原作者项目链接：
 http://code.cocoachina.com/view/130107
-
-本项目链接：
-https://github.com/paperclouds/Accordion
